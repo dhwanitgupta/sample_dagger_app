@@ -45,7 +45,7 @@ public class HandlersChain implements Chain {
                 handlers.get(i).after(job);
             }
         } catch (Throwable th) {
-
+            th.printStackTrace();
         }
 
         System.out.println(job.getResponseOutputStream().toString());

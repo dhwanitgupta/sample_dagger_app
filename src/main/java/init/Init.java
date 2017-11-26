@@ -5,16 +5,10 @@ import core.components.AppComponent;
 import core.components.DaggerAppComponent;
 import core.datatypes.Job;
 import core.datatypes.impl.ApiJob;
-import core.handlers.Handler;
+
 import core.initializers.impls.HandlersChain;
 import lambda.Context;
-import lambda.RequestHandler;
 
-import modules.DaggerMyComponent;
-
-import service.BackendService;
-
-import javax.inject.Inject;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -38,7 +32,7 @@ public class Init {
         JsonObject jsonObject = new JsonObject();
         JsonObject payload = new JsonObject();
         payload.addProperty("userName", "Dhwanit Gupta");
-        payload.addProperty("phoneNumber", "9674274558");
+        payload.addProperty("phoneNumber", "9642745558");
 
         jsonObject.addProperty("operation", "CreateUser");
         jsonObject.add("payload", payload);
